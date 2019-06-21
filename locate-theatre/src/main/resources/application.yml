@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: locate-theatre
+  cloud:
+    config:
+      uri: http://127.0.0.1:8888
+      fail-fast: true
+      password: asdf1234
+      username: user
+  h2:
+    console:
+      enabled:  true
+      settings:
+        web-allow-others: true
+  datasource:
+    url: jdbc:h2:file:~/h2/locatetheatredb
+    username: admin
+    password: asdf1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  data:
+    rest:
+      base-path: /api
+      
